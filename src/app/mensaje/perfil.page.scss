@@ -1,0 +1,35 @@
+ion-header {
+  ion-toolbar {
+    --background: white
+    ion-title {
+      color: #fff;
+    }
+  }
+}
+
+ion-content {
+  ion-list {
+    ion-item {
+      ion-label {
+        .mensaje-title {
+          font-size: 1.2rem;
+          color: #34495e;
+        }
+        p {
+          color: #7f8c8d;
+        }
+      }
+    }
+  }
+}
+
+ion-button.back {
+  --color: black;
+}
+
+ion-button.enviar-button {
+  --color: #fff;
+  --background: #e67e22;
+  --border-radius: 5px;
+  margin: 20px;
+}

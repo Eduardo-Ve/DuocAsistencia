@@ -1,0 +1,118 @@
+<ion-header [translucent]="false">
+  <ion-toolbar color="primary">
+    <ion-button fill="clear" slot="end" (click)="backMenu()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title class="ion-text-center">Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="toggleCourse('Ingles')">
+      <ion-label>Ingles (7/14)</ion-label>
+      <ion-badge class="badge-red">70%</ion-badge>
+    </ion-item>
+    <ion-list *ngIf="isCourseExpanded('Ingles')">
+      <ion-item class="text-rojo">10/08 AUSENTE</ion-item>
+      <ion-item>11/08 PRESENTE</ion-item>
+      <ion-item class="text-rojo">24/08 AUSENTE</ion-item>
+      <ion-item>25/08 PRESENTE</ion-item>
+      <ion-item>31/08 PRESENTE</ion-item>
+      <ion-item class="text-rojo">01/09 AUSENTE</ion-item>
+      <ion-item>07/09 PRESENTE</ion-item>
+      <ion-item class="text-rojo">08/09 AUSENTE</ion-item>
+      <ion-item>21/09 PRESENTE</ion-item>
+      <ion-item>22/09 PRESENTE</ion-item>
+      <ion-item>28/09 PRESENTE</ion-item>
+      <ion-item class="text-rojo">29/09 AUSENTE</ion-item>
+      <ion-item class="text-rojo">05/10 AUSENTE</ion-item>
+      <ion-item class="text-rojo">15/09 AUSENTE</ion-item>
+      <!-- Agrega más días faltados si es necesario -->
+    </ion-list>
+
+    <ion-item (click)="toggleCourse('Arquitectura')">
+      <ion-label>Arquitectura (11/11)</ion-label>
+      <ion-badge class="badge-red">100%</ion-badge>
+    </ion-item>
+    <ion-list *ngIf="isCourseExpanded('Arquitectura')">
+      <ion-item>10/08 PRESENTE</ion-item>
+      <ion-item>11/08 PRESENTE</ion-item>
+      <ion-item>24/08 PRESENTE</ion-item>
+      <ion-item>25/08 PRESENTE</ion-item>
+      <ion-item>31/08 PRESENTE</ion-item>
+      <ion-item>01/09 PRESENTE</ion-item>
+      <ion-item>07/09 PRESENTE</ion-item>
+      <ion-item>08/09 PRESENTE</ion-item>
+      <ion-item>21/09 PRESENTE</ion-item>
+      <ion-item>22/09 PRESENTE</ion-item>
+      <ion-item>28/09 PRESENTE</ion-item>
+      <!-- Agrega más días faltados si es necesario -->
+    </ion-list>
+
+    <ion-item (click)="toggleCourse('Estadistica Descriptiva')">
+      <ion-label>Estadistica Descriptiva (10/14)</ion-label>
+      <ion-badge class="badge-red">75%</ion-badge>
+    </ion-item>
+    <ion-list *ngIf="isCourseExpanded('Estadistica Descriptiva')">
+      <ion-item>10/08 PRESENTE</ion-item>
+      <ion-item>11/08 PRESENTE</ion-item>
+      <ion-item>24/08 PRESENTE</ion-item>
+      <ion-item>25/08 PRESENTE</ion-item>
+      <ion-item>31/08 PRESENTE</ion-item>
+      <ion-item>01/09 PRESENTE</ion-item>
+      <ion-item>07/09 PRESENTE</ion-item>
+      <ion-item class="text-rojo">08/09 AUSENTE</ion-item>
+      <ion-item>21/09 PRESENTE</ion-item>
+      <ion-item>22/09 PRESENTE</ion-item>
+      <ion-item>28/09 PRESENTE</ion-item>
+      <ion-item class="text-rojo">29/09 AUSENTE</ion-item>
+      <ion-item class="text-rojo">05/10 AUSENTE</ion-item>
+      <ion-item class="text-rojo">15/09 AUSENTE</ion-item>
+      <!-- Agrega más días faltados si es necesario -->
+    </ion-list>
+
+    <ion-item (click)="toggleCourse('Programación Movil')">
+      <ion-label>Programación Movil (12/14)</ion-label>
+      <ion-badge class="badge-red">84%</ion-badge>
+    </ion-item>
+    <ion-list *ngIf="isCourseExpanded('Programación Movil')">
+      <ion-item >10/08 PRESENTE</ion-item>
+      <ion-item>11/08 PRESENTE</ion-item>
+      <ion-item >24/08 PRESENTE</ion-item>
+      <ion-item>25/08 PRESENTE</ion-item>
+      <ion-item>31/08 PRESENTE</ion-item>
+      <ion-item >01/09 PRESENTE</ion-item>
+      <ion-item>07/09 PRESENTE</ion-item>
+      <ion-item class="text-rojo">08/09 AUSENTE</ion-item>
+      <ion-item>21/09 PRESENTE</ion-item>
+      <ion-item>22/09 PRESENTE</ion-item>
+      <ion-item>28/09 PRESENTE</ion-item>
+      <ion-item >29/09 PRESENTE</ion-item>
+      <ion-item >05/10 PRESENTE</ion-item>
+      <ion-item class="text-rojo">15/09 AUSENTE</ion-item>
+      <!-- Agrega más días faltados si es necesario -->
+    </ion-list>
+
+    <ion-item (click)="toggleCourse('Ética')">
+      <ion-label>Ética (10/13)</ion-label>
+      <ion-badge class="badge-red">90%</ion-badge>
+    </ion-item>
+    <ion-list *ngIf="isCourseExpanded('Ética')">
+      <ion-item class="text-rojo">10/08 AUSENTE</ion-item>
+      <ion-item>11/08 PRESENTE</ion-item>
+      <ion-item class="text-rojo">24/08 AUSENTE</ion-item>
+        <ion-item class="text-rojo">25/08 AUSENTE</ion-item>
+        <ion-item>31/08 PRESENTE</ion-item>
+        <ion-item>01/09 PRESENTE</ion-item>
+        <ion-item>07/09 PRESENTE</ion-item>
+        <ion-item>08/09 PRESENTE</ion-item>
+        <ion-item>21/09 PRESENTE</ion-item>
+        <ion-item>22/09 PRESENTE</ion-item>
+        <ion-item>28/09 PRESENTE</ion-item>
+        <ion-item >29/09 PRESENTE</ion-item>
+        <ion-item >05/10 PRESENTE</ion-item>
+      </ion-list>
+    </ion-list>
+  </ion-content>
+  

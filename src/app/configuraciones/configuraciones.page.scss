@@ -1,0 +1,38 @@
+
+ion-header[translucent="true"],
+ion-menu,
+ion-content {
+  --background: white;
+  --color: black;
+}
+
+ion-title {
+  color: rgb(3, 0, 0); // Cambiar el color del texto (opcional)
+  font-size: 20px;
+}
+
+ion-item {
+  --background: white;
+  --color: black;
+  
+}
+ion-list{
+  --color: black;
+  background-color: white;
+  ion-list-header{
+    color: black;
+    font-size: large;
+  }
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+*{
+  font-size: 19px;
+}
+ion-button{
+  color: black;
+
+}

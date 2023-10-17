@@ -1,0 +1,46 @@
+*{
+    color: black;
+    ion-title.title-large {
+        font-size: 30px;
+      } 
+}
+ion-title{
+  font-size: 12px;
+}
+ion-card-content{
+  font-size: 12px;
+ 
+}
+
+ion-icon {
+  color: #0f92b3;
+
+  &:hover {
+    color: #8BB8E8; 
+  }
+}
+
+ion-tab-button {
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+ion-card {
+  --background: #ffffff;
+  --color: rgb(39, 37, 37);
+  margin-top: 30px;
+  }
+
+ion-card-title {
+  font-size: x-large;
+}
+ion-toolbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+}
+

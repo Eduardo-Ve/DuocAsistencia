@@ -1,0 +1,28 @@
+<ion-header [translucent]="false">
+  <ion-toolbar color="primary">
+    <ion-button fill="clear" slot="end" (click)="backMenu()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title class="ion-text-center">Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- <div id="contenido" > -->
+    <!-- <div #qrcode class="qr"></div>
+    <input type="text" [(ngModel)]="textoQR" class="input-qr" placeholder="Texto para QR">
+    <button (click)="generarQR()" class="boton-generar">Generar QR</button>
+    <button (click)="takePicture()" class="boton-generar">Escanear QR</button> -->
+
+    <ion-button expand="full" (click)="startScanner()" >
+      <ion-icon name="scan" slot="star"></ion-icon>
+      empezar a esscanear </ion-button>
+    <p class="ion-text-center" *ngIf="result">{{ result }}</p>
+    <ion-row class="scanner-buttons" >
+      <ion-col class="ion-no-padding">
+        <ion-button expand="full" (click)="stopScanner()">
+          parar escaneo
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  <!-- </div> -->
+</ion-content>

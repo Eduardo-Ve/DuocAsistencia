@@ -1,0 +1,83 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="left: 10vh">
+    <img src="assets/logo.png" alt="" width="250" height="60">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="horario">
+    <ion-card>
+
+      <ion-card-content>
+        Ingles Intermedio<br>
+        Fecha: 16 de octubre de 2023<br>
+        Hora: 10:00 AM - 12:00 PM<br>
+        Lugar: Sala 305 Sede Melipilla
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        Programacion Movil<br>
+        Fecha: 16 de octubre de 2023<br>
+        Hora: 12:01 AM - 13:20 PM<br>
+        Lugar: Sala LPC1 Sede Melipilla
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        Arquitectura<br>
+        Fecha: 16 de octubre de 2023<br>
+        Hora: 13:21 AM - 14:50 PM<br>
+        Lugar: Sala LPC1 Sede Melipilla
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        Arquitectura<br>
+        Fecha: 16 de octubre de 2023<br>
+        Hora: 13:21 AM - 14:50 PM<br>
+        Lugar: Sala LPC2 Sede Melipilla
+    
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        Arquitectura<br>
+        Fecha: 16 de octubre de 2023<br>
+        Hora: 14:51 AM - 16:50 PM<br>
+        Lugar: Sala LPC2 Sede Melipilla
+    
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" (click)="navigateToAsistencias()">
+        <ion-icon name="calendar-outline"></ion-icon>
+        Asistencias
+      </ion-tab-button>
+
+      <ion-tab-button tab="scan" (click)="navigateToEscaner()">
+        <ion-icon name="scan-sharp"></ion-icon>
+        Escanea
+      </ion-tab-button>
+
+      
+      <ion-tab-button tab="perfil" (click)="navigateToPerfil()">
+        <ion-icon name="mail-unread-outline"></ion-icon>
+        Mensaje
+      </ion-tab-button>
+      <ion-tab-button tab="config" (click)="navigateToConfiguraciones()">
+        <ion-icon name="settings-outline"></ion-icon>
+        Ajustes
+      </ion-tab-button>
+
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

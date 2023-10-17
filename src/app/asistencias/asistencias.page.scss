@@ -1,0 +1,69 @@
+ion-header[translucent="true"],
+ion-menu,
+ion-content {
+  --background: white;
+  --color: black;
+}
+
+ion-toolbar {
+  --ion-color-primary: white;
+  color: black;
+  /* Color de la barra de título */
+}
+
+ion-title {
+  font-size: 19px;
+  color: black;
+  /* Tamaño de fuente del título */
+}
+
+ion-content {
+  --ion-background-color: #fffbfb;
+  /* Color de fondo de la página */
+
+  ion-list {
+    ion-item {
+      
+      ion-button {
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        display: block;
+      }
+      ion-icon {
+        font-size: 20px;
+      }
+      div {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+ion-list {
+  background-color: white;
+}
+
+.item-inner {
+  --background-color: #f4f4f4;
+}
+
+ion-tabs {
+  background-color: white;
+}
+
+ion-button {
+  color: black;
+}
+
+
+.weas > .mierdas{
+    color: red;
+    font-size: 10px;
+    
+
+}
+
+.text-rojo {
+  color: red;
+}
