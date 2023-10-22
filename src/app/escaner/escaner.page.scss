@@ -1,10 +1,14 @@
+body.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+}
 #contenido {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px; /* Aumenté el espacio entre elementos */
+  gap: 20px; /* AumentÃ© el espacio entre elementos */
 }
 
 page-asistencias {
@@ -12,10 +16,10 @@ page-asistencias {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 240px; /* Reduje el tamaño del QR */
-    height: 240px; /* Reduje el tamaño del QR */
+    width: 240px; /* Reduje el tamaÃ±o del QR */
+    height: 240px; /* Reduje el tamaÃ±o del QR */
     background-color: #fff;
-    border: none; /* Quité el borde */
+    border: none; /* QuitÃ© el borde */
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px #ccc;
   }
@@ -33,8 +37,8 @@ ion-button {
 .input-qr {
   width: 100%;
   padding: 10px;
-  border: none; /* Quité el borde */
-  border-radius: 5px; /* Agregué bordes redondeados */
+  border: none; /* QuitÃ© el borde */
+  border-radius: 5px; /* AgreguÃ© bordes redondeados */
   font-size: 16px;
   margin-bottom: 10px;
   background-color: black;
@@ -53,18 +57,26 @@ ion-button {
 .boton-generar {
   background-color: #FFB800;
   color: #160f0f;
-  border: none; /* Quité el borde */
-  padding: 12px 40px; /* Aumenté el tamaño del botón */
-   /* Aumenté el radio del borde */
+  border: none; /* QuitÃ© el borde */
+  padding: 12px 40px; /* AumentÃ© el tamaÃ±o del botÃ³n */
+   /* AumentÃ© el radio del borde */
   cursor: pointer;
-  font-size: 18px; /* Aumenté el tamaño del texto */
+  font-size: 18px; /* AumentÃ© el tamaÃ±o del texto */
   transition: background-color 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px; /* Añadí espacio entre el ícono y el texto */
+  gap: 5px; /* AÃ±adÃ­ espacio entre el Ã­cono y el texto */
 }
 
 .boton-generar:hover {
   background-color: #d99c01;
+}
+.scanner-buttons{
+  margin: 0px;
+  position: absolute;
+  bottom: 100px;
+  width: 100vw;
+  height: 50px;
+  z-index: 11;
 }

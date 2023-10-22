@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AnimationController, NavController } from '@ionic/angular';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import { Storage } from '@ionic/storage-angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -16,6 +16,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ]),
   ],
 })
+
 export class HomePage {
   usuario = ""
   clave = ""
@@ -23,7 +24,9 @@ export class HomePage {
   claveError = false;
 
 
-  constructor(private nav: NavController,
+  constructor(
+    private storage: Storage,
+    private nav: NavController,
     private anim: AnimationController
     ) {} login() {
       this.usuarioError = this.usuario.length <= 3;
@@ -50,7 +53,9 @@ export class HomePage {
       }
     }
     
-    
+    async ngOnInit() {
+      await this.storage.create();
+    }
   
     navigateToAsistencias() {
       this.nav.navigateForward('/asistencias');
